@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'home_tab/home_tab.dart';
+import 'package:maintainance/res/app_images.dart';
+import 'package:maintainance/view/main_bottom_tab/main_bottom_tab.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -12,14 +12,14 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // init();
+    init();
     super.initState();
   }
 
   init() async {
-    await Future.delayed(const Duration(seconds: 2));
-    Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => const HomeTab()));
+    await Future.delayed(const Duration(seconds: 3));
+    Navigator.pushReplacement(context,
+        MaterialPageRoute(builder: (context) => const MainBottomTab()));
   }
 
   @override
@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
           SizedBox(
             height: MediaQuery.sizeOf(context).height,
             child: Image.asset(
-              'assets/images/background.jpg',
+              AppImages.splashBackground,
               fit: BoxFit.fitHeight,
             ),
           ),
