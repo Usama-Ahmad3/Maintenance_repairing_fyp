@@ -46,6 +46,22 @@ class _HomeTabState extends State<HomeTab> {
         backgroundColor: AppColors.drawerBackgroundColor,
         child: Column(
           children: [
+            DrawerHeader(
+                padding: EdgeInsets.zero,
+                child: UserAccountsDrawerHeader(
+                  decoration: BoxDecoration(
+                      gradient: LinearGradient(colors: [
+                    Colors.green.shade100,
+                    Colors.cyan.shade100
+                  ])),
+                  accountName: const Text('Maintenance & Repairing Services'),
+                  accountEmail: const Text('12345g@gmail.com'),
+                  margin: EdgeInsets.zero,
+                  currentAccountPicture: const CircleAvatar(
+                    backgroundImage: NetworkImage(
+                        "https://programminginsider.com/wp-content/uploads/2022/02/homeimprovement.jpg"),
+                  ),
+                )),
             ...List.generate(
               drawerList.length,
               (index) => ListTile(
