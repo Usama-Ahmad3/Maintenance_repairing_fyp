@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "465564260808",
+    "project_id": "maintenance-fyp",
+    "storage_bucket": "maintenance-fyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465564260808:android:524639e198f8ed0579c8fd",
+        "android_client_info": {
+          "package_name": "com.usama.maintainance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAizo3C7rTygDGk_rhFgdUgTsfA4HxHhHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

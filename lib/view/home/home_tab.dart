@@ -40,7 +40,7 @@ class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
     final double height = MediaQuery.sizeOf(context).height;
-    final double width = MediaQuery.sizeOf(context).width;
+    // final double width = MediaQuery.sizeOf(context).width;
     return Scaffold(
       drawer: Drawer(
         backgroundColor: AppColors.drawerBackgroundColor,
